@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.002.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "sqsDotnet.Function.Tests", "test\sqsDotnet.Function.Tests.csproj", "{CA2F39EC-12EF-4892-BADE-784075D96444}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "sqsDotnet.Function", "src\sqsDotnet.Function.csproj", "{159324F5-62AC-4AB2-A169-01EEAFFEDD42}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CA2F39EC-12EF-4892-BADE-784075D96444}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CA2F39EC-12EF-4892-BADE-784075D96444}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CA2F39EC-12EF-4892-BADE-784075D96444}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CA2F39EC-12EF-4892-BADE-784075D96444}.Release|Any CPU.Build.0 = Release|Any CPU
+		{159324F5-62AC-4AB2-A169-01EEAFFEDD42}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{159324F5-62AC-4AB2-A169-01EEAFFEDD42}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{159324F5-62AC-4AB2-A169-01EEAFFEDD42}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{159324F5-62AC-4AB2-A169-01EEAFFEDD42}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {832A4266-F5B6-42B5-BDAF-DE70F32E712A}
+	EndGlobalSection
+EndGlobal
