@@ -31,7 +31,7 @@ module "lambda_function" {
   source = "terraform-aws-modules/lambda/aws"
 
   function_name = "sqsDotnet"
-  description   = "API function."
+  description   = "AWS Lambda function SQS subscriber for training purposes using the 'lambda.SQS' template."
   handler       = "sqsDotnet.Function::sqsDotnet.Function.LambdaEntryPoint::FunctionHandlerAsync"
   runtime       = "dotnet8"
   create_role   = false
