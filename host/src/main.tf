@@ -31,7 +31,7 @@ module "lambda_function" {
   source = "terraform-aws-modules/lambda/aws"
 
   function_name = "sqsConsumerDotnet"
-  description   = "AWS Lambda function SQS consumer for training purposes using the 'lambda.SQS' template."
+  description   = "SQS consumer for training purposes using the 'lambda.SQS' template."
   handler       = "sqsConsumerDotnet.Function::sqsConsumerDotnet.Function.Function::FunctionHandler"
   runtime       = "dotnet8"
   create_role   = false
