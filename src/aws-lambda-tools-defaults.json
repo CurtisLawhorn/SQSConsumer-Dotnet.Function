@@ -11,5 +11,5 @@
   "function-runtime": "dotnet8",
   "function-memory-size": 512,
   "function-timeout": 30,
-  "function-handler": "sqsDotnet.Function::sqsDotnet.Function.Function::FunctionHandler"
+  "function-handler": "sqsConsumerDotnet.Function::sqsConsumerDotnet.Function.Function::FunctionHandler"
 }

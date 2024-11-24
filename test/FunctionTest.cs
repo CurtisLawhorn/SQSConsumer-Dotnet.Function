@@ -2,7 +2,7 @@ using Xunit;
 using Amazon.Lambda.TestUtilities;
 using Amazon.Lambda.SQSEvents;
 
-namespace sqsDotnet.Function.Tests;
+namespace sqsConsumerDotnet.Function.Tests;
 
 public class FunctionTest
 {
