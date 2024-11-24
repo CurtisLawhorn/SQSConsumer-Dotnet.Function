@@ -32,7 +32,7 @@ module "lambda_function" {
 
   function_name = "sqsDotnet"
   description   = "AWS Lambda function SQS subscriber for training purposes using the 'lambda.SQS' template."
-  handler       = "sqsDotnet.Function::sqsDotnet.Function.LambdaEntryPoint::FunctionHandlerAsync"
+  handler       = "sqsDotnet.Function::sqsDotnet.Function.Function::FunctionHandler"
   runtime       = "dotnet8"
   create_role   = false
   #lambda_role  = aws_iam_role.lambda_role.arn
