@@ -10,6 +10,55 @@ The generated function handler responds to events on an Amazon SQS queue.
 
 After deploying your function you must configure an Amazon SQS queue as an event source to trigger your Lambda function.
 
+## Here are some steps to follow from to get started with the Terraform:
+
+The role (production.lambda-execute.role) and policies (below) for Lambda execution and trace logging need to be setup ahead of time.
+
+Lambda execution (AWSLambdaBasicExecutionRole)
+```
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Effect": "Allow",
+            "Action": [
+                "logs:CreateLogGroup",
+                "logs:CreateLogStream",
+                "logs:PutLogEvents"
+            ],
+            "Resource": "*"
+        }
+    ]
+}
+```
+
+Trace logging (AWSLambdaTracerAccessExecutionPolicy)
+```
+{
+    "Version": "2012-10-17",
+    "Statement": {
+        "Effect": "Allow",
+        "Action": [
+            "xray:PutTraceSegments",
+            "xray:PutTelemetryRecords"
+        ],
+        "Resource": [
+            "*"
+        ]
+    }
+}
+```  
+
+To deploy your function to AWS Lambda, run the below commands from the /hosting/src folder. 
+
+```
+    terraform init
+    terraform validate
+    terraform plan
+    terraform apply
+    terraform destroy
+```
+
 ## Here are some steps to follow from Visual Studio:
 
 To deploy your function to AWS Lambda, right click the project in Solution Explorer and select *Publish to AWS Lambda*.
@@ -40,12 +89,12 @@ If already installed check if new version is available.
 
 Execute unit tests
 ```
-    cd "sqsDotnet.Function/test/sqsDotnet.Function.Tests"
+    cd "sqsDotnet.Function/test"
     dotnet test
 ```
 
 Deploy function to AWS Lambda
 ```
-    cd "sqsDotnet.Function/src/sqsDotnet.Function"
+    cd "sqsDotnet.Function/src"
     dotnet lambda deploy-function
 ```
