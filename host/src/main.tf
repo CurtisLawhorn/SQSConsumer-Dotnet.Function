@@ -30,9 +30,9 @@ data "aws_iam_role" "existing_lambda_role" {
 module "lambda_function" {
   source = "terraform-aws-modules/lambda/aws"
 
-  function_name = "sqsConsumerDotnet"
+  function_name = "SQSConsumer-Dotnet"
   description   = "SQS consumer for training purposes using the 'lambda.SQS' template."
-  handler       = "sqsConsumerDotnet.Function::sqsConsumerDotnet.Function.Function::FunctionHandler"
+  handler       = "SQSConsumer-Dotnet.Function::SQSConsumer_Dotnet.Function.Function::FunctionHandler"
   runtime       = "dotnet8"
   create_role   = false
   #lambda_role  = aws_iam_role.lambda_role.arn
@@ -46,9 +46,9 @@ module "lambda_function" {
   }
   
   tags = {
-    Name        = "sqsConsumerDotnet.Function"
+    Name        = "SQSConsumer-Dotnet.Function"
     Environment = "Sandbox"
-    Repository  = "https://github.com/CurtisLawhorn/sqsDotnet.Function"
+    Repository  = "https://github.com/CurtisLawhorn/SQSConsumer-Dotnet.Function.git"
   }
 
   source_path = [{

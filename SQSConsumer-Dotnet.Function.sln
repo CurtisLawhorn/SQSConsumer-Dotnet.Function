@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.5.002.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "sqsConsumerDotnet.Function.Tests", "test\sqsConsumerDotnet.Function.Tests.csproj", "{CA2F39EC-12EF-4892-BADE-784075D96444}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SQSConsumer-Dotnet.Function.Tests", "test\SQSConsumer-Dotnet.Function.Tests.csproj", "{CA2F39EC-12EF-4892-BADE-784075D96444}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "sqsConsumerDotnet.Function", "src\sqsConsumerDotnet.Function.csproj", "{159324F5-62AC-4AB2-A169-01EEAFFEDD42}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SQSConsumer-Dotnet.Function", "src\SQSConsumer-Dotnet.Function.csproj", "{159324F5-62AC-4AB2-A169-01EEAFFEDD42}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
